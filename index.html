@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    
+    <meta charset="utf-8">
+    
+    <title>QUIZ WEB APP</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <!-- FIREBASE CONFIGURATION -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCD1M_GqAG_UOozSA1ifvtW1jlIOLUxqQg",
+        authDomain: "quiz-web-app-5f3c8.firebaseapp.com",
+        databaseURL: "https://quiz-web-app-5f3c8-default-rtdb.firebaseio.com",
+        projectId: "quiz-web-app-5f3c8",
+        storageBucket: "quiz-web-app-5f3c8.appspot.com",
+        messagingSenderId: "240826229519",
+        appId: "1:240826229519:web:d1d76171a1f8f4162b547a"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- CSS lINK -->
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <!-- JAVASCRIPT FILES LINK -->
+    <script src="js/Player.js"></script>
+    <script src="js/Question.js"></script>
+    <script src="js/Quiz.js"></script>
+
+  </head>
+  
+  <body>
+
+    <script src="sketch.js"></script>
+
+  </body>
+
+</html>
